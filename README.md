@@ -3,7 +3,7 @@
 
 ***
 Example/Näide:
-![Example/Näide](estonia_county_contour.png){:height="400px" width="600px"}.
+![Example/Näide](estonia_county_contour.png){:height="400px" width="600px"}
 ***
 
 Creates Estonian county countour map with:
