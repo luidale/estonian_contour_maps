@@ -1,5 +1,10 @@
 # estonian_contour_maps
-## Create countour maps of Estonia / Loo Eesti kontuurkaarte
+## Create contour maps of Estonia / Loo Eesti kontuurkaarte
+
+***
+Example/Näide:
+![Example/Näide](estonia_county_contour.png){:height="400px" width="600px"}.
+***
 
 Creates Estonian county countour map with:
 * two lakes (Peipsi and Võrtsjärv),
@@ -14,10 +19,6 @@ Teeb Eesti maakondade kontuurkaardi koos:
 * mõned maakonnad on eraldi märgitud.
 
 Kaart salvestatakse PNG ja PDF-na.
-***
-Example/Näide:
-![Example/Näide](estonia_county_contour.png)
-
 ***
 Usage:
 * Open file "estonia_county_contour.R" in R or RStudio
