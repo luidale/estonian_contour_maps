@@ -58,7 +58,9 @@ plot(est2[20,], add=TRUE, col="red")
 # Plot lakes with ligth blue
 plot(est1[est1$NAME_1 %in% c("Peipsi"),], add=TRUE, col="skyblue")
 plot(est2[est2$NAME_2 %in% c("Võrtsjärve"),], add=TRUE, col="skyblue")
-plot(rus2[rus2$NAME_2 %in% c("Pskov"),], add=TRUE, col="skyblue")
+plot(rus2[(rus2$ENGTYPE_2 %in% c("Water body") & rus2$NAME_1 == "Pskov"),],
+     add=TRUE, col="skyblue")
+
 
 # Add labels
 ## Selected counties
@@ -73,9 +75,7 @@ text(coordinates(est2[20,])+c(0.45,0), labels=c("Tallinn"), cex=label_size)
 ## Latvia
 text(coordinates(lat0)+c(0.45,0.7), labels=c("Latvia"), cex=label_size)
 ## Russia
-text(coordinates(lat0)+c(2,2), labels=c("Russia"), cex=label_size, srt=90)
-text(coordinates(lat0)+c(2.5,1.8), labels=c("Russia"), cex=label_size, srt=90)
-text(coordinates(lat0)+c(3,1.6), labels=c("Russia"), cex=label_size, srt=90)
+text(coordinates(lat0)+c(3.2,1.6), labels=c("Russia"), cex=label_size, srt=90)
 
 # Save as PDF
 saveToPDF <- function(...) {
